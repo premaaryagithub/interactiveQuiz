@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Cyber Quiz/MCQ
+    </title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
+    <meta  name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="quizstyle.css">
+</head>
+<body>
+<div class="home-page  custom-page   ">
+    <h2>CYBER QUIZ</h2>
+    <p>This Quiz Based On Cyber Security!!</p>
+    <p>No Of Questions:  <span class="total-question"></span></p>
+    <button class="next" onclick="startQuiz()">Start</button>
+</div>
+<div class="quiz-page custom-page  hide  ">
+  <div class="time-header  ">
+    <div class="que-no">
+        
+        </div>
+        <div class="time ">
+          <img src="icon.png " alt="" width="20px">
+          <span class="time-left  ">10s</span>          
+        </div>
+</div>        
+    <div class="que-text">
+        </div>
+        
+    <div class="opt-cont">
+           
+        </div>
+    <div class="next-button">
+      
+           <button class="next NEXT   " onclick="next()">Next</button>
+           <button class ="Hint" onclick="hint()"><img src="hint.png" height=40px width= 40px></button>
+           <button class="submit hide " onclick="finishQuiz()">submit</button>
+
+        </div>
+    <div class="res-ind">  
+                
+        </div>
+        <div class="hint hide ">
+          <p>System with Software ,System with Weakness</p>
+        </div>
+        <button class="Exp hide sanserif" onclick="explanation()">Review</button>
+        <div class="explanation  hide">
+            <h1>Explanation</h1>
+            A penetration test, also known as a pen test or ethical hacking, 
+            is a simulated cyber attack against a computer system, network, or web application
+             to assess its security. The goal is to identify vulnerabilities 
+             that an attacker could exploit, so that they can 
+             be fixed before a malicious attacker can exploit them.
+
+            </div>
+</div>        
+<div class="result-page custom-page  hide ">
+  <h2 class="glow">Congratulations!!!<span class="scored"></span></h2>
+    <h1>Quiz Result</h1>
+  
+    <table>
+      <tr>
+        <td>No Of Questions</td>
+        <td><span class="no-of-questions"></span></td>
+      </tr>
+      <tr>
+        <td>No Of Attempted</td>
+        <td><span class="no-of-attempted"></span></td>
+      </tr>
+      <tr>
+        <td>Correct</td>
+        <td><span class="no-of-correct"></span></td>
+      </tr>
+      <tr>
+        <td>Wrong</td>
+        <td><span class="no-of-Wrong"></span></td>
+      </tr>
+      <tr>
+        <td>Total Percentage</td>
+        <td><span class="percentage"></span></td>
+      </tr>
+      <tr>
+        <td>Final Score</td>
+        <td><span class="score"></span></td>
+      </tr>
+        </table>
+        <button class="next" onclick="tryAgain()">Try Again</button>
+        <button class="next" onclick="goHome()">Go Home</button>
+    </div>
+<script src="JS/webapp.js"></script>
+    <script src="JS/quizjs.js"></script>
+</body>
+
+</html>
